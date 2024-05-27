@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira sans',sans-serif;
+    user-select: none;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(45deg, rgb(56, 56, 141),rgb(173, 113, 70) );
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.box{
+    height: 550px;
+    width: 500px;
+    background:#f2f2fc;
+    border-radius: 30px;
+}
+
+
+.heading{
+    color: rgb(99, 57, 138);
+}
+
+.book-pic{
+    height: 35px;
+    padding-top: 5px;
+}
+
+
+.content{
+    display: flex;
+    gap: 10px;
+    padding-top: 25px;
+    padding-left: 30px;
+}
+
+.task-input{
+    position: relative;
+    padding-left: 30px;
+    height: 50px;
+    width: 330px;
+    border-radius: 30px;
+    background:wheat;
+    border: none;
+    outline: none;
+}
+.input-button-box{
+    margin-left: 30px;
+    display: flex;
+    width: fit-content;
+    border-radius: 30px;
+    margin-top: 40px;
+    border: 1px solid black;
+    background-color: wheat;
+}
+
+.add{
+    height: 52px;
+    width: 80px;
+    border-radius: 30px;
+    border: none;
+    background: #347b7e;
+    color: #f2f2fc;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.list{
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+   margin: 50px;
+   list-style: none;
+}
+
+
+ 
+.cross_box{
+    position: absolute;
+    right: 0;
+    height: 5px;
+    /* background: blue; */
+    background: #347b7e;
+    color:white;
+    margin-right: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    
+} 
+
+.cross_box:hover{
+    width: 28px;
+    height: 28px;
+    background: black;
+    color: white;
+    border-radius: 50%; 
+}
+
+
+
+.para{
+    width: 300px;
+    font-size: 20px;
+    word-break: break-word;
+}
+
+.divboxes{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    /* background: blue; */
+    background: #347b7e;
+    height: 30px;
+    border-radius: 20px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.taskvalue{
+    margin-top: 3px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    color: white;
+}
+/* 
+.checkedbox{
+    height: 15px;
+    width: 15px;
+    margin-top: 8px;
+} */
+
+.task-input::placeholder{
+    color: #347b7e;
+}
+
+/* TO Make Responsive*/
+@media (max-width:767px){
+    .heading{
+        /* color: rgb(99, 57, 138); */
+        font-size: 25px;
+    }
+    
+    .book-pic{
+        height: 25px;
+        padding-top: 5px;
+    }
+
+    /* .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    } */
+
+    .box{
+        height: 450px;
+        width: 300px;
+        /* background:#f2f2fc; */
+        /* border-radius: 30px; */
+    }
+    
+    /* .input-button-box{
+        margin-left: 20px;
+        display: flex;
+        width: fit-content;
+        border-radius: 30px;
+        margin-top: 40px;
+        border: 1px solid black;
+        background-color: wheat;
+    } */
+    .task-input{
+        /* position: relative; */
+        padding-left: 20px;
+        height: 30px;
+        width: 200px;
+        /* border-radius: 30px; */
+        /* background:wheat; */
+        /* border: none; */
+        /* outline: none; */
+    }
+
+    .add{
+        height: 32px;
+        width: 60px;
+        /* border-radius: 30px;
+        border: none;
+        background: #347b7e;
+        color: #f2f2fc;
+        */
+         font-size: 15px; 
+        /* font-weight: bold; */
+        /* cursor: pointer;  */
+    }
+
+    .list{
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* gap: 5px; */
+        margin: 20px;
+        /* list-style: none; */
+    }
+    
+    .divboxes{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        /* background: #347b7e; */
+        height: 25px;
+        /* border-radius: 20px; */
+        padding-left: 1px;
+        margin-left: 10px;
+        /* position: relative; */
+    }
+
+    .cross_box{
+        /* position: absolute;
+        right: 0;
+        height: 5px; */
+        /* background: blue; */
+        /* background: #347b7e;
+        color:white;
+        margin-right: 15px;
+        border: none;
+        cursor: pointer; */
+        font-size: 25px;
+       
+    }
+    
+    .cross_box:hover{
+        width: 23px;
+        height: 23px;
+        /* background: black;
+        color: white;
+        border-radius: 50%;  */
+    }
+
+    para{
+        width: 300px;
+        font-size: 20px;
+        /* word-break: break-word; */
+    }
+
+    .taskvalue{
+        /* margin-top: 5px; */
+        font-size: 15px;
+        /* margin-bottom: 15px; */
+        /* margin-left: 20px; */
+        /* color: white; */
+    }
+    .task-input::placeholder{
+        color: #347b7e;
+    }
+    
+}
+
+@media(max-width:480px){
+    .heading{
+        /* color: rgb(99, 57, 138); */
+        margin-top: 5px;
+        font-size: 20px;
+    }
+    
+    .book-pic{
+        height: 25px;
+    }
+
+    /* .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    } */
+
+    .box{
+        height: 400px;
+        width: 250px;
+        /* background:#f2f2fc;
+        border-radius: 30px; */
+    }
+
+    .input-button-box{
+        margin-left: 20px;
+        /* display: flex;
+        width: fit-content;
+        border-radius: 30px;
+        margin-top: 40px;
+        border: 1px solid black;
+        background-color: wheat; */
+    }
+    .task-input{
+        /* position: relative;
+        padding-left: 20px; */
+        height: 20px;
+        width: 170px;
+        /* border-radius: 30px;
+        background:wheat;
+        border: none;
+        outline: none; */
+    }
+
+    .add{
+        height: 22px;
+        width: 40px;
+        /* border-radius: 30px;
+        border: none;
+        background: #347b7e;
+        color: #f2f2fc; */
+        font-size: 10px;
+        /* font-weight: bold;
+        cursor: pointer; */
+    }
+
+    .list{
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* gap: 5px; */
+        margin: 15px;
+        /* list-style: none; */
+    }
+
+    .divboxes{
+        /* display: flex; */
+        /* flex-direction: row; */
+        /* gap: 10px; */
+        /* background: #347b7e; */
+        height: 20px;
+        width: 210px;
+        /* border-radius: 20px; */
+        /* padding-left: 1px; */
+        margin-left: 5px;
+        /* position: relative; */
+    }
+
+    .cross_box{
+        /* position: absolute;
+        right: 0; */
+        /* height: 5px; */
+        /* background: blue; */
+        /* background: #347b7e;
+        color:white;
+        margin-right: 15px;
+        border: none;
+        cursor: pointer; */
+        font-size: 20px;
+       
+    }
+
+    .cross_box:hover{
+        width: 20px;
+        height: 20px;
+        /* background: black;
+        color: white;
+        border-radius: 50%;  */
+    }
+
+    /* para{
+        width: 300px;
+        font-size: 20px;
+        word-break: break-word;
+    } */
+
+    .taskvalue{
+        /* margin-top: 3px; */
+        font-size: 12px;
+        /* margin-bottom: 15px; */
+        /* margin-left: 20px; */
+        /* color: white; */
+    }
+    .task-input::placeholder{
+        /* color: #347b7e; */
+        font-size: 10px;
+    }
+    
+}
